@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 15% 9%;
+    --foreground: 180 100% 95%;
+
+    --card: 240 12% 13%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 240 12% 13%;
+    --popover-foreground: 180 100% 95%;
+
+    --primary: 160 100% 50%;
+    --primary-foreground: 240 15% 9%;
+
+    --secondary: 270 80% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 10% 18%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 40 100% 55%;
+    --accent-foreground: 240 15% 9%;
+
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 22%;
+    --input: 240 10% 22%;
+    --ring: 160 100% 50%;
+
+    --radius: 0.75rem;
+
+    --neon-glow: 160 100% 50%;
+    --neon-purple: 270 80% 60%;
+    --neon-orange: 40 100% 55%;
+    --neon-pink: 330 90% 60%;
+    --neon-blue: 200 100% 55%;
+
+    --sidebar-background: 240 15% 9%;
+    --sidebar-foreground: 180 100% 95%;
+    --sidebar-primary: 160 100% 50%;
+    --sidebar-primary-foreground: 240 15% 9%;
+    --sidebar-accent: 240 10% 18%;
+    --sidebar-accent-foreground: 180 100% 95%;
+    --sidebar-border: 240 10% 22%;
+    --sidebar-ring: 160 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .font-arcade {
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .neon-text {
+    text-shadow: 0 0 7px hsl(var(--neon-glow)), 0 0 20px hsl(var(--neon-glow) / 0.5), 0 0 40px hsl(var(--neon-glow) / 0.3);
+  }
+
+  .neon-text-purple {
+    text-shadow: 0 0 7px hsl(var(--neon-purple)), 0 0 20px hsl(var(--neon-purple) / 0.5);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 5px hsl(var(--neon-glow) / 0.5), 0 0 15px hsl(var(--neon-glow) / 0.2), inset 0 0 5px hsl(var(--neon-glow) / 0.1);
+  }
+
+  .neon-border-purple {
+    box-shadow: 0 0 5px hsl(var(--neon-purple) / 0.5), 0 0 15px hsl(var(--neon-purple) / 0.2);
+  }
+
+  .game-card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .game-card-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+
+  .scanlines {
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      hsl(0 0% 0% / 0.03) 2px,
+      hsl(0 0% 0% / 0.03) 4px
+    );
+  }
+}
