@@ -20,9 +20,12 @@ export default function Index() {
           ))}
         </div>
 
-        <footer className="text-center mt-12 text-muted-foreground text-xs font-arcade">
-          INSERT COIN TO CONTINUE
-        </footer>
+       <footer className="text-center mt-12 text-muted-foreground text-xs font-arcade">
+  LEVEL UP YOUR FUN 🚀 | MADE BY RITIK | VISIT PORTFOLIO :{" "}
+  <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+    Click Here
+  </a>
+</footer>
       </div>
     </div>
   );
