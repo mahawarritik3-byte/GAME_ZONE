@@ -22,7 +22,7 @@ export default function Index() {
 
        <footer className="text-center mt-12 text-muted-foreground text-xs font-arcade">
   LEVEL UP YOUR FUN 🚀 | MADE BY RITIK | VISIT PORTFOLIO :{" "}
-  <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+  <a href="https://ritikportfolio-beta.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
     Click Here
   </a>
 </footer>
